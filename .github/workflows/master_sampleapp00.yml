@@ -32,9 +32,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip cache purge
-          pip install --upgrade pip
-          pip install --upgrade setuptools>=61
-          pip install setuptools_scm>=8
           pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)

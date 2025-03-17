@@ -1,5 +1,5 @@
-setuptools>=61
-setuptools_scm>=8
+setuptools
+setuptools_scm
 wheel
 build
 absl-py==2.0.0

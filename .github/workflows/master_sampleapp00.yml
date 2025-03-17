@@ -31,6 +31,7 @@ jobs:
       
       - name: Install dependencies
         run: |
+          pip cache purge
           pip install --upgrade pip
           pip install --upgrade setuptools>=61
           pip install setuptools_scm>=8

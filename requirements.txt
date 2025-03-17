@@ -1,4 +1,8 @@
-﻿absl-py==2.0.0
+setuptools>=61
+setuptools_scm>=8
+wheel
+build
+absl-py==2.0.0
 adal==1.2.7
 aiohttp==3.8.6
 aiosignal==1.3.1

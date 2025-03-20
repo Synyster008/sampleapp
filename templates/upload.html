@@ -23,5 +23,21 @@
             {% endif %}
         {% endwith %}
     </div>
+    <!-- New section for available files to download -->
+    <div class="download-container">
+        <h2>Available Files for Download</h2>
+        {% if files %}
+            <ul>
+                {% for file in files %}
+                    <li>
+                        {{ file }}
+                        <a href="{{ url_for('download', filename=file) }}" class="download-btn">Download</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No files available for download.</p>
+        {% endif %}
+    </div>
 </body>
 </html>
